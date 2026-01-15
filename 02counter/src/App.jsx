@@ -20,6 +20,7 @@ function App() {
   const increseValue = () =>{
     if(counter === 20){}
     else {
+      // this is for normal
       // setCounter(counter + 1); // it takes callback
 
       // will it be showing directly 19 -> no
