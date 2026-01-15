@@ -19,7 +19,29 @@ function App() {
   // }
   const increseValue = () =>{
     if(counter === 20){}
-    else setCounter(counter + 1);
+    else {
+      // setCounter(counter + 1); // it takes callback
+
+      // will it be showing directly 19 -> no
+      // setCounter(counter + 1); 
+      // setCounter(counter + 1); 
+      // setCounter(counter + 1); 
+      // setCounter(counter + 1);  
+
+      // name does not matter. And now it will increse by 1, four time
+      // setCounter((prevCounter) => prevCounter + 1);
+      // setCounter((prevCounter) => prevCounter + 1); 
+      // setCounter((prevCounter) => prevCounter + 1); 
+      // setCounter((prevCounter) => prevCounter + 1); 
+
+      // both are same
+      // name does not matter. And now it will increse by 1, four time
+      setCounter((counter) => counter + 1);
+      setCounter((counter) => counter + 1);
+      setCounter((counter) => counter + 1);
+      setCounter((counter) => counter + 1);
+
+    } 
   }
 
   const decreseValue = () =>{
